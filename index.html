@@ -14,11 +14,11 @@
   <meta property="og:title" content="Nasi Bakar Mama Asha - Sensasi Gurih Pedas yang Bikin Nagih!">
   <meta property="og:description" content="Nikmati nasi bakar dengan bumbu rempah khas, ayam suwir melimpah, dibakar dalam daun pisang. Harga cuma 7.000-an, pesan sekarang via WhatsApp!">
   <meta property="og:type" content="website">
-  <!-- Ganti URL dan gambar jika sudah punya -->
+  <!-- Ganti URL jika sudah punya domain -->
   <meta property="og:url" content="https://contoh-domain-mama-asha.com">
-  <meta property="og:image" content="https://contoh-domain-mama-asha.com/images/nasi-bakar-mama-asha.jpg">
+  <meta property="og:image" content="https://contoh-domain-mama-asha.com/images/hero-nasi-bakar-mama-asha.jpg">
 
-  <!-- Font (opsional, boleh diganti/dihapus) -->
+  <!-- Font (opsional) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -85,21 +85,17 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.6rem;
     }
 
-    .brand-logo {
-      width: 40px;
-      height: 40px;
+    .brand-logo-img {
+      width: 48px;
+      height: 48px;
       border-radius: 999px;
-      background: linear-gradient(135deg, #f97316, #facc15);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: #fff;
+      object-fit: contain;
+      background: #000; /* karena logo background hitam */
+      padding: 2px;
       box-shadow: var(--shadow-soft);
-      font-size: 0.9rem;
     }
 
     .brand-text-title {
@@ -248,27 +244,44 @@
       background: radial-gradient(circle at top, #fed7aa 0, #fff7ed 45%, #fff 100%);
       border-radius: 24px;
       box-shadow: var(--shadow-soft);
-      padding: 1.1rem;
+      padding: 0.8rem;
       position: relative;
       overflow: hidden;
     }
 
-    .hero-image-placeholder {
+    .hero-image-real {
       border-radius: 18px;
-      padding: 2.2rem 1.5rem;
-      text-align: center;
-      border: 1px dashed rgba(248, 113, 22, 0.55);
-      background: rgba(255, 255, 255, 0.75);
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
 
-    .hero-image-placeholder h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.35rem;
+    .hero-logo-watermark {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 64px;
+      height: 64px;
+      border-radius: 999px;
+      background: #000;
+      padding: 3px;
+      opacity: 0.95;
+      box-shadow: var(--shadow-soft);
     }
 
-    .hero-image-placeholder p {
-      font-size: 0.8rem;
-      color: var(--muted);
+    .hero-free-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #22c55e;
+      color: #fff;
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      box-shadow: var(--shadow-soft);
     }
 
     .hero-tag {
@@ -388,6 +401,36 @@
       display: flex;
       flex-direction: column;
       gap: 0.45rem;
+    }
+
+    .menu-image-wrap {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+      aspect-ratio: 4 / 5;
+      background: #f3f4f6;
+    }
+
+    .menu-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .menu-best-seller {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.5rem;
+      background: #ef4444;
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
     }
 
     .menu-header {
@@ -649,16 +692,14 @@
   <header>
     <div class="container nav">
       <div class="brand">
-        <div class="brand-logo">
-          MA
-        </div>
+        <img src="images/logo-mama-asha.png" alt="Logo Nasi Bakar Mama Asha" class="brand-logo-img" />
         <div>
           <div class="brand-text-title">Nasi Bakar Mama Asha</div>
           <div class="brand-text-sub">Gurih • Pedas • Nagih</div>
         </div>
       </div>
       <a
-        href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar."
+        href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar."
         class="nav-cta"
         target="_blank"
         rel="noopener noreferrer"
@@ -687,19 +728,19 @@
           <div class="hero-benefits">
             <div class="pill">🔥 Dibakar langsung saat dipesan</div>
             <div class="pill">🍗 Ayam suwir & ampela pilihan</div>
-            <div class="pill">💸 Hemat untuk harian & acara</div>
+            <div class="pill">🛵 Free Delivery Taman Walet*</div>
             <div class="pill">✅ Halal & rumahan</div>
           </div>
           <div class="cta-group">
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar."
+              href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar."
               class="btn-main"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span>🟢</span> Pesan Sekarang
             </a>
-            <span class="btn-ghost">Tanpa minimal order untuk sekitar lokasi tertentu*</span>
+            <span class="btn-ghost">Pre Order H-2 untuk pesanan banyak*</span>
           </div>
           <p class="hero-note">
             Cukup kirim chat: <em>“Bang, pesen Nasi Bakar Mama Asha 3, pedes level 2.”</em>
@@ -711,16 +752,21 @@
         </div>
 
         <div class="hero-image-card">
-          <!-- Di sini nanti bisa diganti dengan foto asli -->
-          <div class="hero-image-placeholder">
-            <h3>Foto Nasi Bakar Mama Asha</h3>
-            <p>
-              Ganti area ini dengan gambar 4:5 nasi bakar close-up, asap tipis, daun pisang hijau,
-              tone hangat, ala foto marketplace.
-            </p>
+          <img
+            src="images/hero-nasi-bakar-mama-asha.jpg"
+            alt="Nasi Bakar Ayam Suwir Mama Asha"
+            class="hero-image-real"
+          />
+          <img
+            src="images/logo-mama-asha.png"
+            alt="Logo Nasi Bakar Mama Asha"
+            class="hero-logo-watermark"
+          />
+          <div class="hero-free-badge">
+            <span>🛵</span> Free Delivery Taman Walet
           </div>
           <div class="hero-tag">
-            <span>🚚</span> Siap antar area sekitar
+            <span>🔥</span> Best Seller UMKM Rumahan
           </div>
         </div>
       </div>
@@ -789,14 +835,25 @@
     <!-- MENU -->
     <section id="menu">
       <div class="container">
-        <h2 class="section-title">Menu Nasi Bakar Mama Asha</h2>
-        <p class="section-subtitle">
+        <h2 class="section-title">Menu Nasi Bakar Mama Asha</h2
+          <p class="section-subtitle">
           Pilih varian favoritmu, siap temani waktu makan bareng keluarga, teman kantor, atau momen mager di rumah.
         </p>
 
         <div class="menu-grid">
-          <!-- Ayam Suwir -->
+          <!-- Ayam Suwir (BEST SELLER) -->
           <article class="menu-card">
+            <div class="menu-image-wrap">
+              <!-- Ganti dengan foto 4:5 untuk menu -->
+              <img
+                src="images/menu-nasi-bakar-ayam-suwir.jpg"
+                alt="Nasi Bakar Ayam Suwir Mama Asha"
+                class="menu-image"
+              />
+              <div class="menu-best-seller">
+                <span>🏆</span> BEST SELLER
+              </div>
+            </div>
             <div class="menu-header">
               <h3 class="menu-name">Nasi Bakar Ayam Suwir</h3>
               <div class="menu-price">Rp 7.000</div>
@@ -809,7 +866,7 @@
               <span class="pill">Cocok semua usia</span>
             </div>
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar%20Ayam%20Suwir."
+              href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar%20Ayam%20Suwir."
               class="menu-cta"
               target="_blank"
               rel="noopener noreferrer"
@@ -820,6 +877,14 @@
 
           <!-- Ampela -->
           <article class="menu-card">
+            <div class="menu-image-wrap">
+              <!-- Ganti dengan foto 4:5 untuk menu -->
+              <img
+                src="images/menu-nasi-bakar-ampela-ayam.jpg"
+                alt="Nasi Bakar Ampela Ayam Mama Asha"
+                class="menu-image"
+              />
+            </div>
             <div class="menu-header">
               <h3 class="menu-name">Nasi Bakar Ampela Ayam</h3>
               <div class="menu-price">Rp 7.000</div>
@@ -832,7 +897,7 @@
               <span class="pill">Pas buat makan malam</span>
             </div>
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar%20Ampela%20Ayam."
+              href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar%20Ampela%20Ayam."
               class="menu-cta"
               target="_blank"
               rel="noopener noreferrer"
@@ -894,7 +959,7 @@
         <div class="order-layout">
           <div class="order-box">
             <div class="order-badge">
-              ⏰ Pre-Order H-1 / H-2 untuk jumlah banyak
+              ⏰ Pre Order H-2 & Free Delivery Taman Walet*
             </div>
             <h3>Cara Pesan Nasi Bakar Mama Asha</h3>
             <ul class="order-list">
@@ -908,7 +973,7 @@
             </p>
 
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar."
+              href="https://wa.me/6285932684440?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar."
               class="order-whatsapp"
               target="_blank"
               rel="noopener noreferrer"
@@ -917,7 +982,7 @@
             </a>
 
             <p class="order-note">
-              *Area pengantaran & ongkir mengikuti kesepakatan saat chat ya, insyaAllah fleksibel.
+              *Free delivery khusus area Taman Walet, luar area menyesuaikan ongkir. Pre Order H-2 untuk pesanan banyak.
             </p>
           </div>
 
@@ -972,7 +1037,7 @@
         © <span id="year"></span> Nasi Bakar Mama Asha. All Rights Reserved.
       </div>
       <div class="footer-links">
-        <span>Lokasi: (isi nama daerah/kota di sini)</span>
+        <span>Lokasi: Taman Walet (isi detail alamat di sini)</span>
         <a href="#menu">Lihat Menu</a>
         <a href="#order">Cara Pesan</a>
       </div>
@@ -984,4 +1049,4 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
-</html>
+  </html>
