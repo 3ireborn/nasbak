@@ -10,12 +10,12 @@
   <meta name="keywords" content="Nasi Bakar Mama Asha, nasi bakar enak, nasi bakar murah, kuliner rumahan, UMKM kuliner, ayam suwir pedas, nasi bakar bandung, pre order nasi bakar">
   <meta name="author" content="Nasi Bakar Mama Asha">
 
-  <!-- Open Graph -->
+  <!-- Open Graph (Preview kalau dishare ke FB/WA) -->
   <meta property="og:title" content="Nasi Bakar Mama Asha - Sensasi Gurih Pedas yang Bikin Nagih!">
   <meta property="og:description" content="Nikmati nasi bakar dengan bumbu rempah khas, ayam suwir melimpah, dibakar dalam daun pisang. Harga cuma 7.000-an, pesan sekarang via WhatsApp!">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://born.github.io">
-  <meta property="og:image" content="https://born.github.io/images/hero-nasi-bakar-mama-asha.jpg">
+  <meta property="og:image" content="https://born.github.io/nasbak/images/hero-nasi-bakar-ayam-suwir.jpg">
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,20 +65,21 @@
       padding: 0 1.25rem;
     }
 
+    /* HEADER – style C (semi transparan, blur) */
     header {
       position: sticky;
       top: 0;
-      z-index: 10;
-      background: rgba(255, 247, 237, 0.96);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(249, 115, 22, 0.15);
+      z-index: 20;
+      background: rgba(15, 23, 42, 0.12);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(248, 250, 252, 0.18);
     }
 
     .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.75rem 0;
+      padding: 0.55rem 0.1rem;
     }
 
     .brand {
@@ -94,7 +95,9 @@
       object-fit: cover;
       background: #000;
       padding: 2px;
-      box-shadow: var(--shadow-soft);
+      box-shadow:
+        0 0 0 2px rgba(248, 250, 252, 0.55),
+        0 10px 25px rgba(15, 23, 42, 0.4);
     }
 
     .brand-text-title {
@@ -754,7 +757,7 @@
 
         <div class="hero-image-card">
           <img
-            src="images/hero-nasi-bakar-mama-asha.jpg"
+            src="images/hero-nasi-bakar-ayam-suwir.jpg"
             alt="Nasi Bakar Ayam Suwir Mama Asha"
             class="hero-image-real"
           />
@@ -1045,4 +1048,4 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
-</html>
+                </html>
