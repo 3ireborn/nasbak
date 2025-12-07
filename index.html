@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasi Bakar Mama Asha - Sensasi Gurih Pedas yang Bikin Nagih!</title>
+
+  <!-- Meta SEO Friendly -->
+  <meta name="description" content="Nasi Bakar Mama Asha - nasi bakar gurih pedas, ayam suwir melimpah, dibakar dalam daun pisang. Harga mulai 7.000-an. Halal, fresh, dan cocok untuk segala acara. Pesan via WhatsApp sekarang!">
+  <meta name="keywords" content="Nasi Bakar Mama Asha, nasi bakar enak, nasi bakar murah, kuliner rumahan, UMKM kuliner, ayam suwir pedas, nasi bakar bandung, pre order nasi bakar">
+  <meta name="author" content="Nasi Bakar Mama Asha">
+
+  <!-- Meta Open Graph untuk Facebook / Meta -->
+  <meta property="og:title" content="Nasi Bakar Mama Asha - Sensasi Gurih Pedas yang Bikin Nagih!">
+  <meta property="og:description" content="Nikmati nasi bakar dengan bumbu rempah khas, ayam suwir melimpah, dibakar dalam daun pisang. Harga cuma 7.000-an, pesan sekarang via WhatsApp!">
+  <meta property="og:type" content="website">
+  <!-- Ganti URL dan gambar jika sudah punya -->
+  <meta property="og:url" content="https://contoh-domain-mama-asha.com">
+  <meta property="og:image" content="https://contoh-domain-mama-asha.com/images/nasi-bakar-mama-asha.jpg">
+
+  <!-- Font (opsional, boleh diganti/dihapus) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #f97316; /* oranye pedas */
+      --primary-dark: #ea580c;
+      --secondary: #16a34a; /* hijau daun / WA */
+      --bg: #fff7ed;
+      --text: #111827;
+      --muted: #6b7280;
+      --radius: 12px;
+      --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 247, 237, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(249, 115, 22, 0.15);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #f97316, #facc15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.9rem;
+    }
+
+    .brand-text-title {
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    .brand-text-sub {
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 999px;
+      background: var(--secondary);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .nav-cta span {
+      font-size: 1rem;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 2.5rem 0 2rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 0.75rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #f97316;
+    }
+
+    .hero-title {
+      font-size: clamp(1.9rem, 3vw, 2.4rem);
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-title span {
+      color: var(--primary);
+    }
+
+    .hero-subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      max-width: 460px;
+    }
+
+    .hero-benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .pill {
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      font-size: 0.8rem;
+      background: #fff;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 0.9rem;
+    }
+
+    .btn-main {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.3rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: var(--shadow-soft);
+      cursor: pointer;
+    }
+
+    .btn-main span {
+      font-size: 1rem;
+    }
+
+    .btn-ghost {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .hero-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .hero-rating {
+      display: flex;
+      gap: 0.35rem;
+      align-items: center;
+      margin-top: 0.4rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .hero-rating-stars {
+      font-size: 0.85rem;
+      color: #f59e0b;
+    }
+
+    .hero-image-card {
+      background: radial-gradient(circle at top, #fed7aa 0, #fff7ed 45%, #fff 100%);
+      border-radius: 24px;
+      box-shadow: var(--shadow-soft);
+      padding: 1.1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image-placeholder {
+      border-radius: 18px;
+      padding: 2.2rem 1.5rem;
+      text-align: center;
+      border: 1px dashed rgba(248, 113, 22, 0.55);
+      background: rgba(255, 255, 255, 0.75);
+    }
+
+    .hero-image-placeholder h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .hero-image-placeholder p {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .hero-tag {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      background: #f97316;
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .hero-tag span {
+      font-size: 0.9rem;
+    }
+
+    /* Section */
+    section {
+      padding: 2.5rem 0;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto 1.8rem;
+    }
+
+    /* Masalah & Solusi */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      padding: 1.1rem 1rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      margin-bottom: 0.4rem;
+      font-size: 0.85rem;
+      color: var(--text);
+    }
+
+    .list-bullet-bad {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: #fee2e2;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      color: #b91c1c;
+      margin-top: 2px;
+    }
+
+    .list-bullet-good {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: #dcfce7;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      color: #15803d;
+      margin-top: 2px;
+    }
+
+    /* Menu */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .menu-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: var(--shadow-soft);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .menu-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .menu-price {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--primary-dark);
+    }
+
+    .menu-desc {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .menu-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .menu-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+      padding: 0.5rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(22, 163, 74, 0.4);
+      font-size: 0.8rem;
+      color: var(--secondary);
+      font-weight: 600;
+      align-self: flex-start;
+      background: #f0fdf4;
+    }
+
+    /* Testimoni */
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .testi-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: var(--shadow-soft);
+      padding: 0.9rem 0.85rem;
+      font-size: 0.82rem;
+    }
+
+    .testi-stars {
+      color: #f59e0b;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .testi-text {
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+
+    .testi-name {
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    .testi-info {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    /* Order Info */
+    .order-layout {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 1.4rem;
+      align-items: center;
+    }
+
+    .order-box {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: var(--shadow-soft);
+      padding: 1rem;
+      font-size: 0.85rem;
+    }
+
+    .order-box h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .order-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0.8rem;
+    }
+
+    .order-list li {
+      margin-bottom: 0.35rem;
+    }
+
+    .order-highlight {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.7rem;
+    }
+
+    .order-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.1rem;
+      border-radius: 999px;
+      background: #22c55e;
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .order-whatsapp span {
+      font-size: 1.1rem;
+    }
+
+    .order-note {
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .order-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 999px;
+      background: #fef3c7;
+      font-size: 0.75rem;
+      color: #92400e;
+      margin-bottom: 0.4rem;
+    }
+
+    .order-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+    }
+
+    .stat-pill {
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      background: #fff7ed;
+    }
+
+    /* Tag / Hashtag */
+    .tag-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      justify-content: center;
+      margin-top: 1.1rem;
+      font-size: 0.78rem;
+    }
+
+    .tag-item {
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      border: 1px dashed rgba(148, 163, 184, 0.5);
+      background: #fff;
+      color: #4b5563;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(148, 163, 184, 0.2);
+      padding: 1.2rem 0 1.6rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .footer-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .footer-links a {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid,
+      .order-layout,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 1.8rem;
+      }
+
+      .hero-grid {
+        gap: 1.5rem;
+      }
+
+      .hero-image-card {
+        order: -1;
+      }
+
+      header {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-cta {
+        display: none;
+      }
+
+      .hero-title {
+        font-size: 1.7rem;
+      }
+
+      section {
+        padding: 2rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-logo">
+          MA
+        </div>
+        <div>
+          <div class="brand-text-title">Nasi Bakar Mama Asha</div>
+          <div class="brand-text-sub">Gurih • Pedas • Nagih</div>
+        </div>
+      </div>
+      <a
+        href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar."
+        class="nav-cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>💬</span> Pesan via WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO (HOOK + CTA) -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Laper tapi bosan menu itu-itu saja?
+          </div>
+          <h1 class="hero-title">
+            Saatnya cobain <span>Nasi Bakar Mama Asha</span> — gurih pedas yang bikin nagih!
+          </h1>
+          <p class="hero-subtitle">
+            Nasi hangat dengan ayam suwir melimpah, bumbu rempah khas, dibungkus daun pisang
+            dan dibakar hingga harum. Mulai <strong>7.000-an per porsi</strong> — cocok buat sarapan, makan siang, sampai begadang.
+          </p>
+          <div class="hero-benefits">
+            <div class="pill">🔥 Dibakar langsung saat dipesan</div>
+            <div class="pill">🍗 Ayam suwir & ampela pilihan</div>
+            <div class="pill">💸 Hemat untuk harian & acara</div>
+            <div class="pill">✅ Halal & rumahan</div>
+          </div>
+          <div class="cta-group">
+            <a
+              href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar."
+              class="btn-main"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>🟢</span> Pesan Sekarang
+            </a>
+            <span class="btn-ghost">Tanpa minimal order untuk sekitar lokasi tertentu*</span>
+          </div>
+          <p class="hero-note">
+            Cukup kirim chat: <em>“Bang, pesen Nasi Bakar Mama Asha 3, pedes level 2.”</em>
+          </p>
+          <div class="hero-rating">
+            <span class="hero-rating-stars">★★★★★</span>
+            <span>Ratusan porsi terjual tiap pekan</span>
+          </div>
+        </div>
+
+        <div class="hero-image-card">
+          <!-- Di sini nanti bisa diganti dengan foto asli -->
+          <div class="hero-image-placeholder">
+            <h3>Foto Nasi Bakar Mama Asha</h3>
+            <p>
+              Ganti area ini dengan gambar 4:5 nasi bakar close-up, asap tipis, daun pisang hijau,
+              tone hangat, ala foto marketplace.
+            </p>
+          </div>
+          <div class="hero-tag">
+            <span>🚚</span> Siap antar area sekitar
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASALAH & SOLUSI -->
+    <section id="masalah">
+      <div class="container">
+        <h2 class="section-title">Kenapa Harus Ganti Menu Hari Ini?</h2>
+        <p class="section-subtitle">
+          Banyak yang bilang: “Mau makan enak, tapi dompet tetap aman.” Kalau kamu juga begitu, baca ini dulu.
+        </p>
+
+        <div class="grid-2">
+          <!-- MASALAH -->
+          <div class="card">
+            <h3 class="card-title">MASALAH yang sering kamu hadapi</h3>
+            <p>
+              Mungkin kamu pernah ngalamin hal ini saat cari makanan:
+            </p>
+            <ul class="list">
+              <li>
+                <span class="list-bullet-bad">✖</span>
+                <span>Makanan cepat saji bikin enek, rasanya itu-itu saja dan kurang “rumahan”.</span>
+              </li>
+              <li>
+                <span class="list-bullet-bad">✖</span>
+                <span>Harga mahal, tapi porsinya kecil dan nggak bikin puas.</span>
+              </li>
+              <li>
+                <span class="list-bullet-bad">✖</span>
+                <span>Susah cari makanan hangat, halal, dan cocok dimakan kapan saja.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SOLUSI -->
+          <div class="card">
+            <h3 class="card-title">SOLUSI dari Nasi Bakar Mama Asha</h3>
+            <p>
+              Nasi Bakar Mama Asha hadir jadi jawaban buat kamu yang pengen makan enak, hemat, dan praktis:
+            </p>
+            <ul class="list">
+              <li>
+                <span class="list-bullet-good">✔</span>
+                <span>Nasi hangat + ayam suwir/ampela berbumbu rempah khas, dibakar dalam daun pisang yang harum.</span>
+              </li>
+              <li>
+                <span class="list-bullet-good">✔</span>
+                <span>Harga mulai <strong>7.000-an</strong> per porsi, pas buat jajan harian sampai acara rame-rame.</span>
+              </li>
+              <li>
+                <span class="list-bullet-good">✔</span>
+                <span>Fresh dibakar setelah dipesan — bukan stok lama, bukan asal angetin.</span>
+              </li>
+              <li>
+                <span class="list-bullet-good">✔</span>
+                <span>Halal, bersih, dan diolah dengan standar dapur rumahan.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+      <div class="container">
+        <h2 class="section-title">Menu Nasi Bakar Mama Asha</h2>
+        <p class="section-subtitle">
+          Pilih varian favoritmu, siap temani waktu makan bareng keluarga, teman kantor, atau momen mager di rumah.
+        </p>
+
+        <div class="menu-grid">
+          <!-- Ayam Suwir -->
+          <article class="menu-card">
+            <div class="menu-header">
+              <h3 class="menu-name">Nasi Bakar Ayam Suwir</h3>
+              <div class="menu-price">Rp 7.000</div>
+            </div>
+            <p class="menu-desc">
+              Nasi gurih dengan ayam suwir pedas manis, bumbu rempah khas, dibungkus daun pisang dan dibakar sampai harum.
+            </p>
+            <div class="menu-badge-row">
+              <span class="pill">Level pedas bisa request</span>
+              <span class="pill">Cocok semua usia</span>
+            </div>
+            <a
+              href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar%20Ayam%20Suwir."
+              class="menu-cta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pesan varian ini 🛵
+            </a>
+          </article>
+
+          <!-- Ampela -->
+          <article class="menu-card">
+            <div class="menu-header">
+              <h3 class="menu-name">Nasi Bakar Ampela Ayam</h3>
+              <div class="menu-price">Rp 7.000</div>
+            </div>
+            <p class="menu-desc">
+              Buat pecinta ampela! Bumbu pedas gurih yang meresap, berpadu dengan nasi hangat dan aroma daun pisang yang khas.
+            </p>
+            <div class="menu-badge-row">
+              <span class="pill">Favorit penggemar jeroan</span>
+              <span class="pill">Pas buat makan malam</span>
+            </div>
+            <a
+              href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar%20Ampela%20Ayam."
+              class="menu-cta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pesan varian ini 🛵
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section id="testimoni">
+      <div class="container">
+        <h2 class="section-title">Apa Kata Mereka?</h2>
+        <p class="section-subtitle">
+          Bukan cuma enak di foto, tapi juga bikin nagih di lidah. Ini beberapa komentar dari pelanggan yang sudah coba.
+        </p>
+
+        <div class="testi-grid">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              “Enak banget, bumbunya meresap dan pedasnya pas. Anak-anak juga suka, nggak terlalu pedas kalau request level 1.”
+            </p>
+            <div class="testi-name">Bu Rani</div>
+            <div class="testi-info">Ibu Rumah Tangga</div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              “Murah tapi bukan murahan. Porsinya pas, cocok buat makan siang di kantor. Tinggal chat, tau-tau udah dianter.”
+            </p>
+            <div class="testi-name">Pak Andi</div>
+            <div class="testi-info">Karyawan Kantor</div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              “Pesan banyak buat acara pengajian, alhamdulillah semua bilang enak dan aromanya bikin selera makan naik.”
+            </p>
+            <div class="testi-name">Teh Sari</div>
+            <div class="testi-info">Koordinator Acara</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER / PRE ORDER (CTA KUAT) -->
+    <section id="order">
+      <div class="container">
+        <h2 class="section-title">Yuk, Pesan Sekarang Sebelum Kehabisan!</h2>
+        <p class="section-subtitle">
+          Stok harian terbatas supaya kualitas rasa dan kesegaran tetap terjaga. Kamu bisa pesan untuk dimakan sekarang atau pre-order untuk acara.
+        </p>
+
+        <div class="order-layout">
+          <div class="order-box">
+            <div class="order-badge">
+              ⏰ Pre-Order H-1 / H-2 untuk jumlah banyak
+            </div>
+            <h3>Cara Pesan Nasi Bakar Mama Asha</h3>
+            <ul class="order-list">
+              <li>1. Klik tombol WhatsApp di bawah ini.</li>
+              <li>2. Kirim format chat: jumlah, varian, level pedas, dan alamat.</li>
+              <li>3. Tunggu konfirmasi dari Mama Asha.</li>
+              <li>4. Nasi Bakar siap diantar atau diambil sesuai jadwal.</li>
+            </ul>
+            <p class="order-highlight">
+              Contoh chat: <em>“Halo, pesen Nasi Bakar Ayam Suwir 5, pedes level 2, untuk besok jam 10 pagi ya.”</em>
+            </p>
+
+            <a
+              href="https://wa.me/6281234567890?text=Halo%20Mama%20Asha%2C%20saya%20mau%20pesan%20Nasi%20Bakar."
+              class="order-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>💬</span> Pesan via WhatsApp Sekarang
+            </a>
+
+            <p class="order-note">
+              *Area pengantaran & ongkir mengikuti kesepakatan saat chat ya, insyaAllah fleksibel.
+            </p>
+          </div>
+
+          <div>
+            <div class="card">
+              <h3 class="card-title">Cocok untuk Berbagai Momen</h3>
+              <ul class="list">
+                <li>
+                  <span class="list-bullet-good">🎉</span>
+                  <span>Arisan, pengajian, dan acara keluarga.</span>
+                </li>
+                <li>
+                  <span class="list-bullet-good">🏢</span>
+                  <span>Snack meeting kantor atau rapat komunitas.</span>
+                </li>
+                <li>
+                  <span class="list-bullet-good">🌙</span>
+                  <span>Menu begadang, nonton bola, atau lembur malam.</span>
+                </li>
+              </ul>
+
+              <div class="order-stats">
+                <div class="stat-pill">+500 porsi terjual tiap pekan*</div>
+                <div class="stat-pill">Bisa request tanpa pedas</div>
+                <div class="stat-pill">Packing rapi, siap dibagikan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAG / HASHTAG SEO FRIENDLY -->
+        <div class="tag-wrap">
+          <span class="tag-item">#NasiBakarMamaAsha</span>
+          <span class="tag-item">#NasiBakarEnak</span>
+          <span class="tag-item">#NasiBakarMurah</span>
+          <span class="tag-item">#UMKMKuliner</span>
+          <span class="tag-item">#KulinerRumahan</span>
+          <span class="tag-item">#AromaDaunPisang</span>
+          <span class="tag-item">#AyamSuwirPedas</span>
+          <span class="tag-item">#JajananMurahMeriah</span>
+          <span class="tag-item">#KulinerIndonesia</span>
+          <span class="tag-item">#PreOrderNasiBakar</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-row">
+      <div>
+        © <span id="year"></span> Nasi Bakar Mama Asha. All Rights Reserved.
+      </div>
+      <div class="footer-links">
+        <span>Lokasi: (isi nama daerah/kota di sini)</span>
+        <a href="#menu">Lihat Menu</a>
+        <a href="#order">Cara Pesan</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set tahun otomatis di footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
