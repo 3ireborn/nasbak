@@ -10,24 +10,23 @@
   <meta name="keywords" content="Nasi Bakar Mama Asha, nasi bakar enak, nasi bakar murah, kuliner rumahan, UMKM kuliner, ayam suwir pedas, nasi bakar bandung, pre order nasi bakar">
   <meta name="author" content="Nasi Bakar Mama Asha">
 
-  <!-- Meta Open Graph untuk Facebook / Meta -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Nasi Bakar Mama Asha - Sensasi Gurih Pedas yang Bikin Nagih!">
   <meta property="og:description" content="Nikmati nasi bakar dengan bumbu rempah khas, ayam suwir melimpah, dibakar dalam daun pisang. Harga cuma 7.000-an, pesan sekarang via WhatsApp!">
   <meta property="og:type" content="website">
-  <!-- Ganti URL jika sudah punya domain -->
-  <meta property="og:url" content="https://contoh-domain-mama-asha.com">
-  <meta property="og:image" content="https://contoh-domain-mama-asha.com/images/hero-nasi-bakar-mama-asha.jpg">
+  <meta property="og:url" content="https://born.github.io">
+  <meta property="og:image" content="https://born.github.io/images/hero-nasi-bakar-mama-asha.jpg">
 
-  <!-- Font (opsional) -->
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --primary: #f97316; /* oranye pedas */
+      --primary: #f97316;
       --primary-dark: #ea580c;
-      --secondary: #16a34a; /* hijau daun / WA */
+      --secondary: #16a34a;
       --bg: #fff7ed;
       --text: #111827;
       --muted: #6b7280;
@@ -92,8 +91,8 @@
       width: 48px;
       height: 48px;
       border-radius: 999px;
-      object-fit: contain;
-      background: #000; /* karena logo background hitam */
+      object-fit: cover;
+      background: #000;
       padding: 2px;
       box-shadow: var(--shadow-soft);
     }
@@ -267,6 +266,7 @@
       padding: 3px;
       opacity: 0.95;
       box-shadow: var(--shadow-soft);
+      object-fit: cover;
     }
 
     .hero-free-badge {
@@ -302,7 +302,7 @@
       font-size: 0.9rem;
     }
 
-    /* Section */
+    /* Sections */
     section {
       padding: 2.5rem 0;
     }
@@ -389,7 +389,7 @@
     /* Menu */
     .menu-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.1rem;
     }
 
@@ -420,8 +420,8 @@
 
     .menu-best-seller {
       position: absolute;
-      bottom: 0.5rem;
-      left: 0.5rem;
+      bottom: 0.6rem;
+      left: 0.6rem;
       background: #ef4444;
       color: #fff;
       font-size: 0.7rem;
@@ -431,6 +431,7 @@
       display: inline-flex;
       align-items: center;
       gap: 0.25rem;
+      box-shadow: var(--shadow-soft);
     }
 
     .menu-header {
@@ -688,7 +689,7 @@
   </style>
 </head>
 <body>
-  <!-- HEADER / NAVBAR -->
+  <!-- HEADER / NAV -->
   <header>
     <div class="container nav">
       <div class="brand">
@@ -709,7 +710,7 @@
     </div>
   </header>
 
-  <!-- HERO (HOOK + CTA) -->
+  <!-- HERO -->
   <main>
     <section class="hero">
       <div class="container hero-grid">
@@ -784,9 +785,7 @@
           <!-- MASALAH -->
           <div class="card">
             <h3 class="card-title">MASALAH yang sering kamu hadapi</h3>
-            <p>
-              Mungkin kamu pernah ngalamin hal ini saat cari makanan:
-            </p>
+            <p>Mungkin kamu pernah ngalamin hal ini saat cari makanan:</p>
             <ul class="list">
               <li>
                 <span class="list-bullet-bad">✖</span>
@@ -835,16 +834,15 @@
     <!-- MENU -->
     <section id="menu">
       <div class="container">
-        <h2 class="section-title">Menu Nasi Bakar Mama Asha</h2
-          <p class="section-subtitle">
+        <h2 class="section-title">Menu Nasi Bakar Mama Asha</h2>
+        <p class="section-subtitle">
           Pilih varian favoritmu, siap temani waktu makan bareng keluarga, teman kantor, atau momen mager di rumah.
         </p>
 
         <div class="menu-grid">
-          <!-- Ayam Suwir (BEST SELLER) -->
+          <!-- AYAM SUWIR -->
           <article class="menu-card">
             <div class="menu-image-wrap">
-              <!-- Ganti dengan foto 4:5 untuk menu -->
               <img
                 src="images/menu-nasi-bakar-ayam-suwir.jpg"
                 alt="Nasi Bakar Ayam Suwir Mama Asha"
@@ -875,10 +873,9 @@
             </a>
           </article>
 
-          <!-- Ampela -->
+          <!-- AMPELA -->
           <article class="menu-card">
             <div class="menu-image-wrap">
-              <!-- Ganti dengan foto 4:5 untuk menu -->
               <img
                 src="images/menu-nasi-bakar-ampela-ayam.jpg"
                 alt="Nasi Bakar Ampela Ayam Mama Asha"
@@ -902,7 +899,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              Pesan varian ini 🛵
+              Pesan varian ini 🌶️🛵
             </a>
           </article>
         </div>
@@ -948,7 +945,7 @@
       </div>
     </section>
 
-    <!-- ORDER / PRE ORDER (CTA KUAT) -->
+    <!-- ORDER -->
     <section id="order">
       <div class="container">
         <h2 class="section-title">Yuk, Pesan Sekarang Sebelum Kehabisan!</h2>
@@ -1013,7 +1010,7 @@
           </div>
         </div>
 
-        <!-- TAG / HASHTAG SEO FRIENDLY -->
+        <!-- TAG -->
         <div class="tag-wrap">
           <span class="tag-item">#NasiBakarMamaAsha</span>
           <span class="tag-item">#NasiBakarEnak</span>
@@ -1045,8 +1042,7 @@
   </footer>
 
   <script>
-    // Set tahun otomatis di footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
-  </html>
+</html>
